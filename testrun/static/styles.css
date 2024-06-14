@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#chatbox {
+    width: 600px;
+    height: 400px;
+    padding: 10px;
+    overflow-y: scroll;
+    overflow: hidden;
+    border: 1px rgb(141, 141, 128);
+    margin: 20px auto;
+    align-items: center;
+}
+
+.message {
+    width: 570px;
+    margin: 1px 0;
+    border: 1px solid black;
+    border-radius: 0.4rem;
+    padding: 10px;
+    align-items: center;
+}
+
+.user {
+    color: blue;
+}
+
+.bot {
+    color: green;
+}
+
+#userInput {
+    border-radius: 0.3rem;
+    width: 40%;
+    padding: 10px;
+    margin: 10px auto;
+    margin-left: none;
+    display: flex;
+    align-items: center;
+}
+
+#sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 100%;
+    background: #FFDBBB;
+    color: #ad7f42;
+    padding: 20px;
+    transition: transform 0.3s ease;
+    transform: translateX(-100%);
+}
+
+#sidebar.active {
+    transform: translateX(0);
+}
+
+#sidebarToggle {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+}
+
+.theme-toggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.dark-theme {
+    background-color: #352d2d;
+    color: #e0e0e0;
+}
+
+.logo {
+    color:  #f5770a;
+    margin-left: 3rem;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.logo span {
+    font-size: 1.5em;
+    font-weight: bold;
+}
